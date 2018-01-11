@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+			.itemCon{
+				background: #0a2b55;
+			}
+		</style>
+		<script type="text/javascript" src="js/lib/jquery.js"></script>
+		<script type="text/javascript" src="js/lib/raphael-min.js"></script>
+		<script type="text/javascript" src="js/res/chinaMapConfig.js"></script>
+		<script type="text/javascript" src="js/res/worldMapConfig.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#ChinaMap2').SVGMap({
+					mapName: 'china',
+					mapWidth: 832,
+					mapHeight: 698,
+					strokeColor: 'ff0000'
+				});
+			});
+		</script>
+	</head>
+
+	<body class="keBody">
+		<div class="kePublic">
+			<!--效果html开始-->
+			<div class="wrap">
+				<h1>SVG 地图（By Rocky）</h1>
+				<div class="items" id="Item2">
+					<h2>自定义数据-json</h2>
+					<a href="javascript:;" class="fold"></a>
+					<div class="itemCon">
+						<div id="ChinaMap2"></div>
+						<div id="stateTip" style="position: absolute;left: 100%;text-align: left;display: inline;"></div>
+					</div>
+				</div>
+			</div>
+
+			<link rel="stylesheet" type="text/css" href="css/SyntaxHighlighter.css">
+			<script type="text/javascript" src="js/lib/SyntaxHighlighter.js"></script>
+			<!--效果html结束-->
+			<div class="clear"></div>
+		</div>
+	</body>
+
+</html>
